@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#2C2C2C">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Kuliah Semester V:"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Garis Pembatas -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FF6200EE"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CardView untuk Tabel Jadwal -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Table Layout -->
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+
+                    <!-- Header Tabel -->
+                    <TableRow>
+                        <TextView android:text="Hari" android:textStyle="bold" android:padding="12dp" android:textColor="#000000" />
+                        <TextView android:text="Jam" android:textStyle="bold" android:padding="12dp" android:textColor="#000000" />
+                        <TextView android:text="Mata Kuliah" android:textStyle="bold" android:padding="12dp" android:textColor="#000000" />
+                        <TextView android:text="Kelas" android:textStyle="bold" android:padding="12dp" android:textColor="#000000" />
+                        <TextView android:text="Ruang" android:textStyle="bold" android:padding="12dp" android:textColor="#000000" />
+                    </TableRow>
+
+                    <!-- Senin -->
+                    <TableRow>
+                        <TextView android:text="Senin" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="08.00–10.50" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="Riset Operasi" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="P1" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="G-208" android:padding="12dp" android:textColor="#333333" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView android:text="Senin" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="10.50–13.20" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="Mobile Programming" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="Q" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="G-207" android:padding="12dp" android:textColor="#333333" />
+                    </TableRow>
+
+                    <!-- Selasa -->
+                    <TableRow>
+                        <TextView android:text="Selasa" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="08.00–10.50" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="Data Mining" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="P1" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="G-207" android:padding="12dp" android:textColor="#333333" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView android:text="Selasa" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="10.50–14.10" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="Pengolahan Citra Digital" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="P1" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="G-303" android:padding="12dp" android:textColor="#333333" />
+                    </TableRow>
+
+                    <!-- Rabu -->
+                    <TableRow>
+                        <TextView android:text="Rabu" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="12.35–14.20" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="Pemrograman Web Lanjut" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="P" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="G-209" android:padding="12dp" android:textColor="#333333" />
+                    </TableRow>
+
+                    <!-- Kamis -->
+                    <TableRow>
+                        <TextView android:text="Kamis" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="08.50–11.40" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="Pemrograman Jaringan" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="P" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="G-212" android:padding="12dp" android:textColor="#333333" />
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView android:text="Kamis" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="13.20–16.00" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="Basis Data Lanjut" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="P" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="G-205" android:padding="12dp" android:textColor="#333333" />
+                    </TableRow>
+
+                    <!-- Jumat -->
+                    <TableRow>
+                        <TextView android:text="Jumat" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="08.00–09.40" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="Pengantar Manajemen" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="P3" android:padding="12dp" android:textColor="#333333" />
+                        <TextView android:text="A-304" android:padding="12dp" android:textColor="#333333" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

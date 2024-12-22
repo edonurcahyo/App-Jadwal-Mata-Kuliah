@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <!-- Kolom Hari -->
+    <TextView
+        android:id="@+id/tvHari"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Hari"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <!-- Kolom Mata Kuliah -->
+    <TextView
+        android:id="@+id/tvMataKuliah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Mata Kuliah"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <!-- Kolom Jam -->
+    <TextView
+        android:id="@+id/tvJam"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Jam"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <!-- Kolom Ruang -->
+    <TextView
+        android:id="@+id/tvRuang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ruang"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</LinearLayout>
